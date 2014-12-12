@@ -1,0 +1,18 @@
+
+snippet pigle
+  if ${1:condition}
+     ${2}
+  endif
+
+snippet class
+regexp ^\s*
+  class ${1:ClassName}${2: \< ${3:ParentClass\}}
+    ${0}
+  end
+
+snippet def
+regexp ^\s*
+  def ${1:method}(${2:*args})
+    ${3}
+  end
+  ${0}

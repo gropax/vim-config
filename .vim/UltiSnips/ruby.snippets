@@ -1,0 +1,15 @@
+snippet #! "#!/usr/bin/env ruby"
+#!/usr/bin/env ruby
+endsnippet
+
+snippet def "def <method> ..."
+def ${1:method}${2:(${3:*args})}
+	${4:# @todo}
+end${0}
+endsnippet
+
+snippet defs "def self.<method> ..."
+def self.${1:method}${2:(${3:*args})}
+	${4:# @todo}
+end${0}
+endsnippet
