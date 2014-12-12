@@ -41,8 +41,13 @@ colorscheme codeschool
 let auto_save = 0
 
 
+" Special filetypes
+"
+autocmd BufNewFile,BufRead *.coffee.tt setf coffee
+autocmd BufNewFile,BufRead *.hamlc setf haml
 
-"NeoComplete
+
+" NeoComplete
 "
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_auto_delimiter = 1
@@ -108,69 +113,3 @@ let g:EasyMotion_mapping_W = '<Leader>É'
 runtime macros/matchit.vim
 
 
-" C++ config
-" 
-autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
-
-" Python config
-" 
-autocmd FileType python setlocal shiftwidth=4 tabstop=4 expandtab
-
-" VIMSript config
-" 
-autocmd FileType vim setlocal shiftwidth=4 tabstop=4 expandtab
-
-" Ruby config
-" 
-"nmap <F7> :!ruby %<cr>
-"imap <M-SPACE> <C-X><C-O>
-""
-"autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 expandtab
-"autocmd FileType ruby compiler ruby
-"let ruby_operators = 1
-"let ruby_space_errors = 1
-"autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
-"autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-"autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-
-" eRuby config
-" 
-autocmd FileType eruby setlocal shiftwidth=2 tabstop=2 expandtab
-
-" RSpec.vim mappings
-" 
-"map <Leader>sc :call RunCurrentSpecFile()<CR>
-"map <Leader>sn :call RunNearestSpec()<CR>
-"map <Leader>sl :call RunLastSpec()<CR>
-"map <Leader>sa :call RunAllSpecs()<CR>
-
-" HTML config
-" 
-autocmd FileType html setlocal shiftwidth=4 tabstop=4 expandtab
-
-" Emmet config
-" 
-let g:user_emmet_leader_key=''
-"let g:user_emmet_mode='n'    "only enable normal mode functions.
-
-" JavaScript config
-" 
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 expandtab
-
-" CoffeeScript config
-" 
-autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 expandtab
-autocmd BufNewFile,BufRead *.coffee.tt setf coffee
-
-" Literate CoffeeScript config
-" 
-autocmd FileType litcoffee setlocal shiftwidth=2 tabstop=2 expandtab
-
-" HAML 
-" 
-autocmd BufNewFile,BufRead *.hamlc setf haml
-autocmd FileType haml setlocal shiftwidth=2 tabstop=2 expandtab
-
-" Eco config
-" 
-autocmd FileType eco setlocal shiftwidth=4 tabstop=4 expandtab
