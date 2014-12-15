@@ -37,7 +37,7 @@ set guifont=Consolas:h16
 colorscheme codeschool
 
 " AutoSave
-" 
+"
 let auto_save = 0
 
 
@@ -70,24 +70,25 @@ endfunction
 
 
 " UltiSnips
-" 
+" 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+
 " Surround
-" ————————
+"
 "nmap ls <Plug>Csurround
 "nunmap <buffer> cs
 
 
 " NERDTree
-" 
+" 
 " Open a NERDTree automatically when vim starts up if no files were specified
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Map a specific shortcut to open NERDTree
-"map <C-n> :NERDTree<CR> # Doesn't work...
+nmap <C-n> :NERDTree<CR>
 
 " Close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
