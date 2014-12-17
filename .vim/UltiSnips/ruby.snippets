@@ -2,6 +2,8 @@ snippet #! "#!/usr/bin/env ruby"
 #!/usr/bin/env ruby
 endsnippet
 
+# Method declarations
+
 snippet def "def <method> ..."
 def ${1:method}${2:(${3:*args})}
 	${4:# @todo}
@@ -13,3 +15,18 @@ def self.${1:method}${2:(${3:*args})}
 	${4:# @todo}
 end${0}
 endsnippet
+
+snippet defi "def initialize ..."
+def initialize${1:(${2:*args})}
+	${3:# @todo}
+end${0}
+endsnippet
+
+# @todo
+#
+snippet diiv "initialize /w inst. var."
+def initialize(${1:args})
+	${1/(\w+)(,\s*)?/@$1 = (?$1:$1\n:)/g}
+end${0}
+endsnippet
+
