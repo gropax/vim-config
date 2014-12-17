@@ -3,6 +3,7 @@
 " set encoding=utf-8
 " set fileencoding=utf-8
 
+" Set file encoding to utf-8
 if has("multi_byte")
   if &termencoding == ""
     let &termencoding = &encoding
@@ -11,21 +12,28 @@ if has("multi_byte")
   setglobal fileencoding=utf-8
 endif
 
+" Import Bépo mappings
 source ~/.vimrc.bepo
 
 let mapleader = "à"
 
+" (???)
 set number
 set autoindent
+
 " Highlight characters over 80 chars line
+" (not working)
 highlight OverLength guibg=#592929
 match OverLength /\%81v.\+/
 
+" Autoload plugins using Pathogen.vim
 call pathogen#infect()
 call pathogen#incubate()
 call pathogen#helptags()
 
+"
 set nocompatible
+
 " set term=xterm
 set term=screen-256color
 
@@ -36,8 +44,8 @@ set t_Co=256
 set guifont=Consolas:h16
 colorscheme codeschool
 
-" AutoSave
-"
+" AutoSave.vim
+" (???)
 let auto_save = 0
 
 
