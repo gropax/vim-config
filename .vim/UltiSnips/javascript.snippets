@@ -1,0 +1,94 @@
+# Regular JavaScript
+#
+snippet iife "(function() {...})();"
+(function(${1:*dependencies}) {
+	${0}
+})($1);
+endsnippet
+
+snippet iifeus "iife + 'use strict'"
+(function() {
+	"use strict";
+
+	${0}
+})();
+endsnippet
+
+
+# Jasmine
+#
+snippet des "describe"
+describe("${1:feature}", function() {
+	${0}
+});
+endsnippet
+
+snippet it "it"
+it("${1:does something}", function() {
+	${2:// @expect}
+});${0}
+endsnippet
+
+snippet be "beforeEach"
+beforeEach(function() {
+	${1:// do something}
+});${0}
+endsnippet
+
+snippet bem "beforeEach module"
+beforeEach(module("${1:module}"));${0}
+endsnippet
+
+snippet bei "beforeEach inject"
+var $1;
+beforeEach(inject(function(_${1:service}_) {
+	$1 = _$1_;
+}));${0}
+endsnippet
+
+# AngularJS
+#
+snippet ngser "AngularJS service"
+angular.module('${1:module}').service('${2:service}', $2);
+
+$2.$inject = [${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2(${3:dependencies}) {
+	$0
+}
+endsnippet
+
+snippet ngfac "AngularJS factory"
+angular.module('${1:module}').factory('${2:factory}', $2);
+
+$2.$inject = [${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2(${3:dependencies}) {
+	return {
+		$0
+	};
+}
+endsnippet
+
+snippet ngctrl "AngularJS controller"
+angular.module('${1:module}').controller('${2:My}Ctrl', $2Ctrl);
+
+$2Ctrl.$inject = ['$scope'${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2Ctrl($scope${3:, dependencies}) {
+	$0
+}
+endsnippet
+
+snippet ngdec "AngularJS decorator"
+angular.module('${1:module}').config(['$provide', function($provide) {
+	$provide.decorator('${2:service}', $2Decorator);
+}]);
+
+$2Decorator.$inject = ['$delegate'${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2Decorator($delegate${3:, dependencies}) {
+	$0
+}
+endsnippet
+
