@@ -58,3 +58,12 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = git@github.com:mattn/webapi-vim.git
+[submodule ".vim/bundle/ack.vim"]
+	path = .vim/bundle/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
+[submodule ".vim/bundle/vim-toml"]
+	path = .vim/bundle/vim-toml
+	url = git@github.com:cespare/vim-toml.git
+[submodule ".vim/bundle/prolog.vim"]
+	path = .vim/bundle/prolog.vim
+	url = git@github.com:adimit/prolog.vim

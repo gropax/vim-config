@@ -46,8 +46,39 @@ beforeEach(inject(function(_${1:service}_) {
 }));${0}
 endsnippet
 
+
+
 # AngularJS
 #
+snippet ngcnf "AngularJS config"
+angular.module('${1:module}').config(config);
+
+config.$inject = [${2/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function config(${2:dependencies}) {
+	$0
+}
+endsnippet
+
+snippet ngcon "AngularJS simple constant"
+angular.module('${1:module}').constant('${2:constant}', ${3:object});
+endsnippet
+
+snippet ngpro "AngularJS provider"
+angular.module('${1:module}').provider('${2:service}', $2Provider);
+
+$2Provider.$inject = [${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2Provider(${3:dependencies}) {
+
+	$0
+
+	this.$get = function() {
+		return {};
+	};
+};
+endsnippet
+
 snippet ngser "AngularJS service"
 angular.module('${1:module}').service('${2:service}', $2);
 
@@ -92,3 +123,105 @@ function $2Decorator($delegate${3:, dependencies}) {
 }
 endsnippet
 
+snippet ngfil "AngularJS filter"
+angular.module('${1:module}').filter('${2:filter}', $2);
+
+$2.$inject = [${3/(,\s*)?([\w$_]+)/$1'$2'/g}];
+
+function $2(${3:dependencies}) {
+	return function(input${4:, params}) {
+		$0
+	};
+}
+endsnippet
+
+snippet ngdir "AngularJS directive"
+angular.module('${1:module}').directive('${2:directive}', $2);
+
+function $2() {
+	return {
+		restrict: 'EA',
+
+		scope: {
+			//myAttr: "=",
+		},
+
+		//templateUrl: 'myTemplate.html',
+
+		controller: function($scope) {
+			// @todo
+		},
+	};
+}
+endsnippet
+
+
+
+
+snippet tngpro "Test AngularJS provider"
+(function() {
+	'use strict';
+
+	describe('${1:myService}Provider', function() {
+
+		var $1;
+
+		beforeEach(function() {
+			// Create a new test module, configure the provider in a config block
+			angular.module('${2:module}.test', function() {})
+				.config(function($1Provider) {
+				${3:/* Configure provider here */}
+			});
+
+			// (?) Include both module in specs
+			module('$2', '$2.test');
+
+			// Inject service to test
+			inject(function(_$1_) {
+				$1 = _$1_;
+			});
+		});
+
+		/* Write the tests here */
+	});
+})();
+endsnippet
+
+snippet tngdir "Test AngularJS Directive"
+(function() {
+	"use strict";
+
+	describe('${1:myDirective}', function() {
+		var $scope, element, isolated;
+
+		beforeEach(function() {
+			module('${2:myModule}');
+
+			inject(function($rootScope, $compile) {
+				$scope = $rootScope.$new();
+				// Create HTML code using the directive
+				element = '<div ${1/[A-Z][a-z]*/-\l$0/g} ${3:/* Attributes */} ></div>';
+				// Populate the $scope with data
+				//$scope.name = 'bob';
+
+				// Compile the directive and link it to the scope
+				element = $compile(element)($scope);
+				// Must trigger a \`$digest\` before testing
+				$scope.$digest();
+			});
+		});
+
+		/* Write the tests here */
+		$0
+	});
+})();
+endsnippet
+
+snippet cmldsh "Camel to dash case test"
+${1:"myCamelText"}
+${1/[A-Z][a-z]*/-\l$0/g}
+endsnippet
+
+snippet clj "Log JSON in console"
+console.log("${1:var}: " + JSON.stringify($1));
+endsnippet
