@@ -1,0 +1,110 @@
+snippet % "<% ... %>"
+<% $1 %>
+endsnippet
+
+snippet = "<%= ... %>"
+<%= $1 %>
+endsnippet
+
+snippet end "end"
+<% end %>
+endsnippet
+
+snippet if "if ... end"
+<% if $1 %>
+	$2
+<% end %>
+endsnippet
+
+snippet ife "if else end"
+<% if $1 %>
+	$2
+<% else %>
+	$3
+<% end %>
+endsnippet
+
+snippet do "do ... end block"
+<% $1 do${2: |${3:*args}|} %>
+	$4
+<% end %>
+endsnippet
+
+snippet =do "= do ... end block"
+<%= $1 do${2: |${3:*args}|} %>
+	$4
+<% end %>
+endsnippet
+
+snippet for "for ... in ... end"
+<% for $1 in $2 %>
+	$3
+<% end %>
+endsnippet
+
+# form_for
+# field (text_field, password_field, ...)
+# form_tag
+# link_to
+# content_tag
+
+snippet bff "bootstrap_form_for"
+<%= bootstrap_form_for ${1:@model} do |f| %>
+	$0
+	<%= f.submit "Submit" %>
+<% end %>
+endsnippet
+
+snippet bft "bootstrap_form_tag"
+<%= bootstrap_form_tag url: $1 do |f| %>
+	$0
+	<%= f.submit "Submit" %>
+<% end %>
+endsnippet
+
+snippet bf "bootstrap field"
+<%= f.${1:type}_field :${2:name} %>
+endsnippet
+
+snippet btf "bootstrap text_field"
+<%= f.text_field :${2:field}${3:, label: "${4:Label:}"} %>
+endsnippet
+
+snippet bef "bootstrap email_field"
+<%= f.email_field :email${2:, label: "${3:Email:}"} %>
+endsnippet
+
+snippet bef "bootstrap password_field"
+<%= f.password_field :password${2:, label: "${3:Password:}"} %>
+endsnippet
+
+snippet lt "link_to"
+<%= link_to "${1:Text}", $2_path$3 %>
+endsnippet
+
+snippet ltd "link_to do"
+<%= link_to $1_path$2 do %>
+	$3
+<% end %>
+endsnippet
+
+snippet cf "content_for"
+<% content_for :$1 do %>
+	$0
+<% end %>
+endsnippet
+
+snippet rt "render template"
+<%= render template: "${1:layouts/${2:template}}" %>
+endsnippet
+
+snippet rp "render partial"
+<%= render partial: "${1:partial}" %>
+endsnippet
+
+snippet ct "content_tag"
+<%= content_tag :$1 do %>
+	$0
+<% end %>
+endsnippet
+
