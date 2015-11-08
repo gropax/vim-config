@@ -13,7 +13,7 @@ if has("multi_byte")
 endif
 
 " Import Bépo mappings
-source ~/global-config/vim/.vimrc.bepo " Dirty path
+source ~/global-config/vim-config/.vimrc.bepo " Dirty path
 
 let mapleader = "à"
 

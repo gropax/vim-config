@@ -1,0 +1,27 @@
+snippet th* "\newtheorem* plain"
+% @th
+\theoremstyle{plain}
+\newtheorem*{${1:name}}{${2:Title}}
+\begin{$1}
+$0
+\end{$1}
+endsnippet
+
+snippet def* "\newtheorem* definition"
+% @th
+\theoremstyle{definition}
+\newtheorem*{${1:name}}{${2:Title}}
+\begin{$1}
+$0
+\end{$1}
+endsnippet
+
+snippet	\bit "\begin{itemize} .. \end{itemize}"
+\begin{itemize}
+\item $0
+\end{itemize}
+endsnippet
+
+snippet \i "\item "
+\item $0
+endsnippet

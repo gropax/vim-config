@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/prolog.vim"]
 	path = .vim/bundle/prolog.vim
 	url = git@github.com:adimit/prolog.vim
+[submodule ".vim/bundle/python-mode"]
+	path = .vim/bundle/python-mode
+	url = git@github.com:klen/python-mode.git
