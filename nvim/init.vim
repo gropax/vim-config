@@ -54,6 +54,10 @@ autocmd BufNewFile,BufRead *.hamlc setf haml
 
 
 
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+
+
 " UltiSnips
 " 
 let g:UltiSnipsExpandTrigger="<tab>"

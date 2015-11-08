@@ -67,3 +67,6 @@
 [submodule ".vim/bundle/python-mode"]
 	path = .vim/bundle/python-mode
 	url = git@github.com:klen/python-mode.git
+[submodule "nvim/bundle/deoplete.nvim"]
+	path = nvim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim
