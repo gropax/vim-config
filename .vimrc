@@ -34,8 +34,6 @@ call pathogen#helptags()
 "
 set nocompatible
 
-" set term=xterm
-set term=screen-256color
 
 syntax on
 filetype plugin indent on
