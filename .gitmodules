@@ -76,3 +76,6 @@
 [submodule "nvim/bundle/fzf.vim"]
 	path = nvim/bundle/fzf.vim
 	url = git@github.com:junegunn/fzf.vim
+[submodule "nvim/bundle/vim-tmux-navigator"]
+	path = nvim/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git

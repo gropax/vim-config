@@ -16,8 +16,6 @@ endif
 "source ~/global-config/vim-config/.vimrc.bepo " Dirty path
 set langmap=ch,tj,sk,rl,hr,lc,ks,jt,éw,Éw
 
-set rtp+=~/.fzf
-
 let mapleader = "à"
 
 " (???)
@@ -50,6 +48,12 @@ colorscheme codeschool
 " AutoSave.vim
 " (???)
 let auto_save = 0
+
+
+" FZF fuzzy finder
+"
+set rtp+=~/.fzf
+nmap <Leader>f :Files<CR>
 
 
 " Special filetypes
