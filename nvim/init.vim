@@ -16,11 +16,15 @@ endif
 "source ~/global-config/vim-config/.vimrc.bepo " Dirty path
 set langmap=ch,tj,sk,rl,hr,lc,ks,jt,éw,Éw
 
+set rtp+=~/.fzf
+
 let mapleader = "à"
 
 " (???)
 set number
 set autoindent
+
+set relativenumber
 
 " Highlight characters over 80 chars line
 " (not working)
