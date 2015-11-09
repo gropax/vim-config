@@ -13,7 +13,8 @@ if has("multi_byte")
 endif
 
 " Import Bépo mappings
-source ~/global-config/vim-config/.vimrc.bepo " Dirty path
+"source ~/global-config/vim-config/.vimrc.bepo " Dirty path
+set langmap=ch,tj,sk,rl,hr,lc,ks,jt,éw,Éw
 
 let mapleader = "à"
 
@@ -65,12 +66,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 
-" Surround
-"
-"nmap ls <Plug>Csurround
-"nunmap <buffer> cs
-
-
 " NERDTree
 " 
 " Open a NERDTree automatically when vim starts up if no files were specified
@@ -82,14 +77,11 @@ nmap <C-n> :NERDTree<CR>
 " Close vim if the only window left open is a NERDTree?
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let g:NERDTreeMapChdir = 'L'
-let g:NERDTreeMapChdir = 'ld'
-let g:NERDTreeMapCWD = 'LD'
-let g:NERDTreeMapOpenInTab = 'j'
-let g:NERDTreeMapJumpLastChild = 'J'
-let g:NERDTreeMapOpenVSplit = 'k'
-let g:NERDTreeMapRefresh = 'h'
-let g:NERDTreeMapRefreshRoot = 'H'
+" DelimitMate
+"
+let delimitMate_expand_cr = 2
+let delimitMate_expand_space = 1
+let delimitMate_balance_matchpairs = 1
 
 
 " EasyMotion

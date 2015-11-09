@@ -1,72 +1,75 @@
-[submodule ".vim/bundle/vim-clojure-static"]
-	path = .vim/bundle/vim-clojure-static
+[submodule "nvim/bundle/vim-clojure-static"]
+	path = nvim/bundle/vim-clojure-static
 	url = git@github.com:guns/vim-clojure-static.git
-[submodule ".vim/bundle/gist-vim"]
-	path = .vim/bundle/gist-vim
+[submodule "nvim/bundle/gist-vim"]
+	path = nvim/bundle/gist-vim
 	url = git@github.com:mattn/gist-vim.git
-[submodule ".vim/bundle/emmet-vim"]
-	path = .vim/bundle/emmet-vim
+[submodule "nvim/bundle/emmet-vim"]
+	path = nvim/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
-[submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
+[submodule "nvim/bundle/vim-markdown"]
+	path = nvim/bundle/vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git
-[submodule ".vim/bundle/vim-rspec"]
-	path = .vim/bundle/vim-rspec
+[submodule "nvim/bundle/vim-rspec"]
+	path = nvim/bundle/vim-rspec
 	url = git@github.com:thoughtbot/vim-rspec.git
-[submodule ".vim/bundle/vim-textobj-rubyblock"]
-	path = .vim/bundle/vim-textobj-rubyblock
+[submodule "nvim/bundle/vim-textobj-rubyblock"]
+	path = nvim/bundle/vim-textobj-rubyblock
 	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
-[submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle/rust.vim
+[submodule "nvim/bundle/rust.vim"]
+	path = nvim/bundle/rust.vim
 	url = git@github.com:wting/rust.vim.git
-[submodule ".vim/bundle/ultisnips"]
-	path = .vim/bundle/ultisnips
+[submodule "nvim/bundle/ultisnips"]
+	path = nvim/bundle/ultisnips
 	url = git@github.com:sirver/ultisnips.git
-[submodule ".vim/bundle/delimitmate"]
-	path = .vim/bundle/delimitmate
+[submodule "nvim/bundle/delimitmate"]
+	path = nvim/bundle/delimitmate
 	url = git@github.com:raimondi/delimitmate.git
-[submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/bundle/vim-easymotion
+[submodule "nvim/bundle/vim-easymotion"]
+	path = nvim/bundle/vim-easymotion
 	url = git@github.com:lokaltog/vim-easymotion.git
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
+[submodule "nvim/bundle/nerdcommenter"]
+	path = nvim/bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule ".vim/bundle/nerdtree"]
-	path = .vim/bundle/nerdtree
+[submodule "nvim/bundle/nerdtree"]
+	path = nvim/bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule ".vim/bundle/vim-textobj-user"]
-	path = .vim/bundle/vim-textobj-user
+[submodule "nvim/bundle/vim-textobj-user"]
+	path = nvim/bundle/vim-textobj-user
 	url = git@github.com:kana/vim-textobj-user.git
-[submodule ".vim/bundle/vim-textobj-variable-segment"]
-	path = .vim/bundle/vim-textobj-variable-segment
+[submodule "nvim/bundle/vim-textobj-variable-segment"]
+	path = nvim/bundle/vim-textobj-variable-segment
 	url = git@github.com:julian/vim-textobj-variable-segment.git
-[submodule ".vim/bundle/vim-cpp-enhanced-highlight"]
-	path = .vim/bundle/vim-cpp-enhanced-highlight
+[submodule "nvim/bundle/vim-cpp-enhanced-highlight"]
+	path = nvim/bundle/vim-cpp-enhanced-highlight
 	url = git@github.com:octol/vim-cpp-enhanced-highlight.git
-[submodule ".vim/bundle/vim-cucumber"]
-	path = .vim/bundle/vim-cucumber
+[submodule "nvim/bundle/vim-cucumber"]
+	path = nvim/bundle/vim-cucumber
 	url = git@github.com:tpope/vim-cucumber.git
-[submodule ".vim/bundle/vim-projectionist"]
-	path = .vim/bundle/vim-projectionist
+[submodule "nvim/bundle/vim-projectionist"]
+	path = nvim/bundle/vim-projectionist
 	url = git@github.com:tpope/vim-projectionist.git
-[submodule ".vim/bundle/vim-ruby"]
-	path = .vim/bundle/vim-ruby
+[submodule "nvim/bundle/vim-ruby"]
+	path = nvim/bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
-[submodule ".vim/bundle/webapi-vim"]
-	path = .vim/bundle/webapi-vim
+[submodule "nvim/bundle/webapi-vim"]
+	path = nvim/bundle/webapi-vim
 	url = git@github.com:mattn/webapi-vim.git
-[submodule ".vim/bundle/ack.vim"]
-	path = .vim/bundle/ack.vim
+[submodule "nvim/bundle/ack.vim"]
+	path = nvim/bundle/ack.vim
 	url = git@github.com:mileszs/ack.vim.git
-[submodule ".vim/bundle/vim-toml"]
-	path = .vim/bundle/vim-toml
+[submodule "nvim/bundle/vim-toml"]
+	path = nvim/bundle/vim-toml
 	url = git@github.com:cespare/vim-toml.git
-[submodule ".vim/bundle/prolog.vim"]
-	path = .vim/bundle/prolog.vim
+[submodule "nvim/bundle/prolog.vim"]
+	path = nvim/bundle/prolog.vim
 	url = git@github.com:adimit/prolog.vim
-[submodule ".vim/bundle/python-mode"]
-	path = .vim/bundle/python-mode
+[submodule "nvim/bundle/python-mode"]
+	path = nvim/bundle/python-mode
 	url = git@github.com:klen/python-mode.git
 [submodule "nvim/bundle/deoplete.nvim"]
 	path = nvim/bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim
+[submodule "nvim/bundle/vim-surround"]
+	path = nvim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround
