@@ -50,6 +50,22 @@ colorscheme codeschool
 let auto_save = 0
 
 
+" UltiSnips
+"
+" Ugly fix for langmap remap in select mode
+"
+let g:UltiSnipsRemoveSelectModeMappings = 1
+let g:UltiSnipsMappingsToIgnore = [ "SelectModeFix" ]
+snoremap <plug>SelectModeFix-h l
+snoremap <plug>SelectModeFix-j j
+snoremap <plug>SelectModeFix-k k
+snoremap <plug>SelectModeFix-l h
+smap h <plug>SelectModeFix-h
+smap j <plug>SelectModeFix-j
+smap k <plug>SelectModeFix-k
+smap l <plug>SelectModeFix-l
+
+
 " FZF fuzzy finder
 "
 set rtp+=~/.fzf

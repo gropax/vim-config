@@ -1,7 +1,3 @@
-" Fix supposed bépo langmap bug in UltiSnips mapping: smap <BS> c
-sunmap <BS>
-smap <BS> <C-G>l
-
 
 " Mappings for FZF
 nmap <Leader>f :Files<CR>
