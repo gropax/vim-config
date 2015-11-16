@@ -1,3 +1,6 @@
+" Fix backspace in Select mode with bépo mappings in Ultisnips
+sunmap <bs>
+smap <bs> <c-g>k
 
 " Mappings for FZF
 nmap <Leader>f :Files<CR>
